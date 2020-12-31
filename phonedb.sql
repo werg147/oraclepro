@@ -1,3 +1,9 @@
+--계정생성
+create user phonedb identified by phonedb;
+
+--접속권한 부여
+grant resource, connect to phonedb;
+
 --테이블 삭제
 delete from phonedb;
 
