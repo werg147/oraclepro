@@ -12,7 +12,6 @@ public class PhoneApp {
 		PhoneDao phoneDao = new PhoneDao();
 		List<PersonVo> personList;
 		
-		//리스트
 		personList = phoneDao.getPersonList();
 		
 		//시작화면
@@ -103,7 +102,7 @@ public class PhoneApp {
 					System.out.print("검색어 > ");
 					String keyword = sc.nextLine();
 					
-					//phoneDao.getPersonList(keyword); //오류
+					personList = phoneDao.serchList(keyword);
 			
 				//6.종료
 				case 6:
